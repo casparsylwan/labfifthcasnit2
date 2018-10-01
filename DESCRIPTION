@@ -18,3 +18,7 @@ Depends:
   tidyr
 URL: https://github.com/nitinsverige/labfifthcasnit
 BugReports: https://github.com/nitinsverige/labfifthcasnit/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

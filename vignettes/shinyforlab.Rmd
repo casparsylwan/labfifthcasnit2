@@ -1,0 +1,58 @@
+---
+title: "Tests shiny application"
+author: "Caspar Sylwan, Nitin Kumar"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Tests shiny application}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+[![Travis build status](https://travis-ci.org/nitinsverige/labfifthcasnit.svg?branch=master)](https://travis-ci.org/nitinsverige/labfifthcasnit)
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+The Riksbank is Sweden's central bank. We have use data from Riksbank for our shiny application.   
+
+## Vignette Info
+
+The shiny application compares three curves for demonstrative purposes.
+
+## Euro market rates
+As per Riksbank, the euro market is a loan market without underlying collateral with fixed-term deposits, with the highest time limit being one year. It is mostly a part of the interbank trading where the rates applying for some of the main currencies in the local interbank market, i.e. the banks' internal market for trade in currencies and debt securities, can be followed.
+
+Euro market rates with 3-month duration includes:
+USA
+Japan
+UK
+Euro area
+Norway
+Denmark
+
+For our lab exercise, we have only included Euro market rates with 3-month duration for USA, Japan, and Euro area. 
+
+Euro market rates with 3-month duration for USA
+
+```{r, fig.show='hold'}
+plot(1:10)
+plot(10:1)
+```
+
+Euro market rates with 3-month duration for Japan
+
+```{r, fig.show='hold'}
+plot(1:10)
+plot(10:1)
+```
+
+Euro market rates with 3-month duration for Euro area
+
+```{r, fig.show='hold'}
+plot(1:10)
+plot(10:1)
+```
