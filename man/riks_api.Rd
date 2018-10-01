@@ -4,7 +4,8 @@
 \alias{riks_api}
 \title{One of those shiny}
 \usage{
-riks_api()
+riks_api(rate1 = "", rate2 = "", rate3 = "", rate4 = "",
+  rate5 = "&g97-EUDP3MNOK=on")
 }
 \arguments{
 \item{input}{One parameter}

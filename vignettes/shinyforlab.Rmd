@@ -17,11 +17,11 @@ knitr::opts_chunk$set(
 )
 ```
 
-The Riksbank is Sweden's central bank. We have use data from Riksbank for our shiny application.   
+The Riksbank is Sweden's central bank. We have used data from Riksbank for our shiny application.   
 
 ## Vignette Info
 
-The shiny application compares three curves for demonstrative purposes.
+The shiny application compares four curves for demonstrative purposes.
 
 ## Euro market rates
 As per Riksbank, the euro market is a loan market without underlying collateral with fixed-term deposits, with the highest time limit being one year. It is mostly a part of the interbank trading where the rates applying for some of the main currencies in the local interbank market, i.e. the banks' internal market for trade in currencies and debt securities, can be followed.
@@ -34,25 +34,42 @@ Euro area
 Norway
 Denmark
 
-For our lab exercise, we have only included Euro market rates with 3-month duration for USA, Japan, and Euro area. 
+For our lab exercise, we have only included Euro market rates with 3-month duration for Norway, USA, Japan, and Euro area.     
+Euro market rates with 3-month duration for Norway
+
+```{r, fig.show='hold'}
+library(ggplot2)
+library(labfifthcasnit)
+library(dplyr)
+library(httr)
+library(readr)
+library(lubridate)
+norway<-riks_api()
+ggplot(norway, aes(x = date, y = Value)) + 
+        geom_point()
+```
 
 Euro market rates with 3-month duration for USA
 
 ```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
+
+us<-riks_api("a",rate5 = "")
+ggplot(us, aes(x = date, y = Value)) + 
+        geom_point()
 ```
 
 Euro market rates with 3-month duration for Japan
 
 ```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
+jap<-riks_api(rate2 = "a",rate5 = "")
+ggplot(jap, aes(x = date, y = Value)) + 
+        geom_point()
 ```
 
 Euro market rates with 3-month duration for Euro area
 
 ```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
+eur1<-riks_api(rate3 = "a",rate5 = "")
+ggplot(eur1, aes(x = date, y = Value)) + 
+        geom_point()
 ```
