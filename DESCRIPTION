@@ -15,7 +15,8 @@ Depends:
   shiny,
   readr,
   lubridate,
-  tidyr
+  tidyr,
+  ggplot2
 URL: https://github.com/nitinsverige/labfifthcasnit
 BugReports: https://github.com/nitinsverige/labfifthcasnit/issues
 Suggests: 
