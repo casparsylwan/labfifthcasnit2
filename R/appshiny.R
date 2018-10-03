@@ -19,7 +19,7 @@
 
 #Conecting to an api reading in date and transform it timeseries.
 
-riks_api <-function(rate1="",rate2="",rate3="",rate4="",rate5="&g97-EUDP3MNOK=on"){
+riks_api <-function(rate1="",rate2="",rate3="",rate4="",rate5=""){
 
   base<-"https://www.riksbank.se/en-gb/statistics/search-interest--exchange-rates/?c=cAverage&s=Dot"
 
@@ -34,6 +34,7 @@ riks_api <-function(rate1="",rate2="",rate3="",rate4="",rate5="&g97-EUDP3MNOK=on
   if(rate2!="") {rate2<- "&g97-EUDP3MJPY=on"}
   if(rate3!="") {rate3<- "&g97-EUDP3MGBP=on"}
   if(rate4!="") {rate4<- "&g97-EUDP3MEUR=on"}
+  if(rate5!="") {rate5<- "&g97-EUDP3MNOK=on"}
 
   adres<-paste0(base,to,rate1,rate2,rate3,rate4,rate5,from,"&export=csv")
 
