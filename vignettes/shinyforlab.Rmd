@@ -44,9 +44,10 @@ library(dplyr)
 library(httr)
 library(readr)
 library(lubridate)
-norway<-riks_api()
+norway<-riks_api("a")
 ggplot(norway, aes(x = date, y = Value)) + 
         geom_point()
+head(norway, n=1)
 ```
 
 Euro market rates with 3-month duration for USA
