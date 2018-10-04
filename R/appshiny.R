@@ -3,6 +3,11 @@
 #' @param input One parameter
 #' @param output Another parameter+-
 #'
+#' @param rate1 Us maturity 3 month
+#' @param rate2 Japanese maturity 3 month
+#' @param rate3 Greate britan maturity 3 month
+#' @param rate4 Eurocountries maturity 3 month
+#' @param rate5 Norwegian maturity 3 month
 #'
 #' @import shiny
 #' @import readr

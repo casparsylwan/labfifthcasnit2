@@ -8,6 +8,16 @@ riks_api(rate1 = "", rate2 = "", rate3 = "", rate4 = "",
   rate5 = "")
 }
 \arguments{
+\item{rate1}{Us maturity 3 month}
+
+\item{rate2}{Japanese maturity 3 month}
+
+\item{rate3}{Greate britan maturity 3 month}
+
+\item{rate4}{Eurocountries maturity 3 month}
+
+\item{rate5}{Norwegian maturity 3 month}
+
 \item{input}{One parameter}
 
 \item{output}{Another parameter+-}
