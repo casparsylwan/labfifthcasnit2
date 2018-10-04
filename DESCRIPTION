@@ -16,7 +16,6 @@ Depends:
   readr,
   lubridate,
   tidyr,
-  ggplot2,
   testthat
 URL: https://github.com/nitinsverige/labfifthcasnit
 BugReports: https://github.com/nitinsverige/labfifthcasnit/issues

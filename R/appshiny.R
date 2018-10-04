@@ -1,7 +1,5 @@
 #' One of those shiny
 #'
-#' @param input One parameter
-#' @param output Another parameter+-
 #'
 #' @param rate1 Us maturity 3 month
 #' @param rate2 Japanese maturity 3 month
@@ -72,6 +70,11 @@ ui<- fluidPage(titlePanel("Repo"),
                  plotOutput(outputId = "lineplot", height = "300px"),
                  tags$a(href = "https://www.riksbank.se/en-gb/statistics/search-interest--exchange-rates/", "source :Riksbanken")
                ))
+
+
+
+#' @param input One parameter
+#' @param output Another parameter+-
 
 
 

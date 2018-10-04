@@ -17,10 +17,6 @@ riks_api(rate1 = "", rate2 = "", rate3 = "", rate4 = "",
 \item{rate4}{Eurocountries maturity 3 month}
 
 \item{rate5}{Norwegian maturity 3 month}
-
-\item{input}{One parameter}
-
-\item{output}{Another parameter+-}
 }
 \description{
 One of those shiny
