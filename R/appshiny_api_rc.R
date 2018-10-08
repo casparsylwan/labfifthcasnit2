@@ -26,7 +26,7 @@
 #' @import httr
 #'
 #'
-#' @export shiny_api
+#' @exportClass shiny_api
 #' @export shinyapi
 #'
 
