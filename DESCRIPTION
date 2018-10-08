@@ -17,6 +17,8 @@ Depends:
   lubridate,
   tidyr,
   testthat
+Imports:
+  methods 
 URL: https://github.com/nitinsverige/labfifthcasnit
 BugReports: https://github.com/nitinsverige/labfifthcasnit/issues
 Suggests: 

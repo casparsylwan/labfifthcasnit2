@@ -25,6 +25,7 @@
 #' @import lubridate
 #' @import tidyr
 #' @import httr
+#' @import methods
 #'
 #'
 #' @exportClass shiny_api
