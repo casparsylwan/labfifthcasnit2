@@ -26,6 +26,7 @@
 #' @import tidyr
 #' @import httr
 #' @import methods
+#' @import testthat
 #'
 #'
 #' @exportClass shiny_api
