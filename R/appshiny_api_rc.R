@@ -1,4 +1,5 @@
 #' One of those shiny
+#'
 #' @field us_rate character.
 #' @field eu_rate character.
 #' @field nor_rate character.
@@ -27,7 +28,7 @@
 #'
 #'
 #' @exportClass shiny_api
-#' @export shinyapi
+#' @export shiny_api
 #'
 
 
