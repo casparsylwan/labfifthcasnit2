@@ -29,7 +29,7 @@
 #'
 #' @exportClass shiny_api
 #' @export shiny_api
-#'
+#' @importFrom methods new
 
 
 shiny_api <- setRefClass("shiny_api",
