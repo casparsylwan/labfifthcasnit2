@@ -10,15 +10,15 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.0
 Depends:
-  httr,
-  dplyr,
   shiny,
-  readr,
-  lubridate,
   tidyr,
   testthat
 Imports:
-  methods 
+  methods,
+  httr,
+  dplyr,
+  lubridate,
+  readr
 URL: https://github.com/nitinsverige/labfifthcasnit
 BugReports: https://github.com/nitinsverige/labfifthcasnit/issues
 Suggests: 

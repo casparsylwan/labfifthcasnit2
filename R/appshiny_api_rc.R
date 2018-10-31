@@ -24,7 +24,7 @@
 #' @import dplyr
 #' @import lubridate
 #' @import tidyr
-#' @import httr
+#' @importFrom httr GET
 #' @import methods
 #' @import testthat
 #'
@@ -81,8 +81,8 @@ shiny_api <- setRefClass("shiny_api",
 
                                               # Select date range to be plotted
 
-                                              dateRangeInput("date",strong("Date range"),start = "2000-01-03",end = "2018-09-27",
-                                                             min= "1999-01-03", max= "2018-10-02")),
+                                              dateRangeInput("date",strong("Date range"),start = "2000-01-03",end = "2018-10-31",
+                                                             min= "1999-01-03", max= "2018-10-31")),
 
                                             mainPanel(
                                               plotOutput(outputId = "lineplot", height = "300px"),
