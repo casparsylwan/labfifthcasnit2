@@ -23,8 +23,6 @@
 #'
 #' @importFrom readr read_delim
 #' @import dplyr
-# @importFrom dplyr mutate
-# @importFrom dplyr tibble
 #' @importFrom lubridate ymd
 #' @import tidyr
 #' @importFrom httr GET
