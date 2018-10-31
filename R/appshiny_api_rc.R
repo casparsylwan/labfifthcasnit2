@@ -22,7 +22,9 @@
 #' @import shiny
 #'
 #' @importFrom readr read_delim
-#' @importFrom dplyr mutate
+#' @import dplyr
+# @importFrom dplyr mutate
+# @importFrom dplyr tibble
 #' @importFrom lubridate ymd
 #' @import tidyr
 #' @importFrom httr GET

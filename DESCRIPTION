@@ -11,13 +11,12 @@ LazyData: true
 RoxygenNote: 6.1.0
 Depends:
   readr,
+  dplyr,
   shiny,
-  tidyr,
-  testthat
+  tidyr
 Imports:
   methods,
   httr,
-  dplyr,
   lubridate
 URL: https://github.com/nitinsverige/labfifthcasnit
 BugReports: https://github.com/nitinsverige/labfifthcasnit/issues
