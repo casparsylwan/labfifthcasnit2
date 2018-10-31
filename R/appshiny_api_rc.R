@@ -20,11 +20,13 @@
 #' @param rate5 Norwegian maturity 3 month
 #'
 #' @import shiny
-#' @import readr
-#' @import dplyr
-#' @import lubridate
+#'
+#' @importFrom readr read_delim
+#' @importFrom dplyr mutate
+#' @importFrom lubridate ymd
 #' @import tidyr
 #' @importFrom httr GET
+#' @importFrom httr content
 #' @import methods
 #' @import testthat
 #'
@@ -115,7 +117,7 @@ shiny_api <- setRefClass("shiny_api",
                            },
                            initialize = function(start="Welcome"){
                              "Starts the api and initilize the values."
-                             print(start); riks_api(); shiny_app()}
+                             riks_api(); shiny_app()}
                          ))
 
 
