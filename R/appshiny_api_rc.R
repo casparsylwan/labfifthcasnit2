@@ -59,19 +59,19 @@ shiny_api <- setRefClass("shiny_api",
 
                              adres<<-paste0(base ,to, us_rate, eu_rate, uk_rate, jp_rate, nor_rate, from, "&export=csv")
 
-                             riks_url<-GET(adres)
+                             riks_url<-httr::GET(adres)
                              #print(status_code(riks_url))
 
-                             repo_days<-content(riks_url,"text",encoding = "UTF-8")
-                             repo_days<-read_delim(repo_days,delim =  ";")
-                             repo_days<-separate(repo_days,"Period",c("d","m","y"),convert = T)
-                             repo_days<-unite(repo_days,"date",c("y","m","d"),sep="-")
-                             repo_day<<-mutate(repo_days, date = ymd(date))
+                             repo_days<- httr::content(riks_url,"text",encoding = "UTF-8")
+                             repo_days<- readr::read_delim(repo_days,delim =  ";")
+                             repo_days<- tidyr::separate(repo_days,"Period",c("d","m","y"),convert = T)
+                             repo_days<- tidyr::unite(repo_days,"date",c("y","m","d"),sep="-")
+                             repo_day<<- dplyr::mutate(repo_days, date = lubridate::ymd(date))
                               },
                            shiny_app = function(){
                              " Shiny_app starts the shiny and illustrates the data."
 
-                             ui<- fluidPage(titlePanel("Repo"),
+                            ui<-shiny::fluidPage(titlePanel("Repo"),
                                             sidebarLayout(
 
                                               # Select type of trend to plot
@@ -118,7 +118,7 @@ shiny_api <- setRefClass("shiny_api",
                              print(start); riks_api(); shiny_app()}
                          ))
 
-shinyapi <- shiny_api
+
 
 
 
