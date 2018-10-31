@@ -22,6 +22,7 @@ URL: https://github.com/nitinsverige/labfifthcasnit
 BugReports: https://github.com/nitinsverige/labfifthcasnit/issues
 Suggests: 
     knitr,
+    ggplot2,
     rmarkdown,
     testthat
 VignetteBuilder: knitr
